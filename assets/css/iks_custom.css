@@ -1,0 +1,73 @@
+/*
+Copyright (c) 2019 Cisco and/or its affiliates.
+
+This software is licensed to you under the terms of the Cisco Sample
+Code License, Version 1.0 (the "License"). You may obtain a copy of the
+License at
+
+               https://developer.cisco.com/docs/licenses
+
+All use of the material herein must be in accordance with the terms of
+the License. All rights not expressly granted by the License are
+reserved. Unless required by applicable law or agreed to separately in
+writing, software distributed under the License is distributed on an "AS
+IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+or implied.
+*/
+
+.orgchart { background: #fff; }
+    .orgchart td.left, .orgchart td.right, .orgchart td.top { border-color: #aaa; }
+    .orgchart td>.down { background-color: #aaa; }
+    .orgchart .pod .title { background-color: #009933;}
+    .orgchart .pod .content { border-color: #009933; overflow: hidden;}
+    .orgchart .pod .tooltip { content: attr(data-text);position:relative; border-bottom:1px dashed #000;  border-color: #009933; display: none;}
+    .orgchart .pod .tooltip:hover { display:block;}
+    .orgchart .namespace .title { background-color: #993366; }
+    .orgchart .namespace .content { border-color: #993366; }
+    .orgchart .service .title { background-color: #070057; overflow: hidden;}
+    .orgchart .service .content { border-color: #070057;overflow: hidden; }
+    .orgchart .ingress .title { background-color: #996633; }
+    .orgchart .ingress .content { border-color: #996633; }
+    .orgchart .missing { opacity: 0.5;}
+    .orgchart .missing .title {  opacity: 0.5; }
+    .orgchart .missing .content { opacity: 0.5; }
+
+    .my-square { color: #b0b0b0;  border-radius:20%; border: 0.5px solid #b0b0b0; padding:0.5px;  background-color: #ffffff; }
+
+    .orgchart .second-menu-icon {
+      transition: opacity .5s;
+      opacity: 1;
+      right: 24px;
+      top: 110px;
+      position: absolute;
+      transform: rotate(-90deg);     
+      
+    }
+    
+    .orgchart .second-menu-icon::before { background-color: rgba(255, 255, 255, 0.5); }
+    .orgchart .second-menu-icon:hover::before { -webkit-filter: invert(100%); filter: invert(100%); }
+    .orgchart .node .second-menu {
+      display: none;
+      position: absolute;
+      top: 300px;
+      right: -140px;
+     
+      
+    }
+
+    .orgchart .node .second-menu {
+        width: 400px;
+        height: auto;
+        float: left;
+        margin: 5px;
+
+        border-radius:0%; 
+        border: 3px solid #060729; 
+        padding:1.5px;  
+        background-color: #060729;
+        color: #ffffff;
+
+        /* The text was mirrored so this block fixes it correctly*/
+        transform: rotate(-90deg) scaleX(-1);
+           
+    }
